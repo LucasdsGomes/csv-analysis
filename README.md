@@ -7,6 +7,13 @@ O foco do projeto é transformar dados brutos em insights claros e compreensíve
 
 ---
 
+## Imagens
+<img width="638" height="507" alt="image" src="https://github.com/user-attachments/assets/f7467ead-b9a3-425e-8103-b0e268ac9189" />
+<img width="639" height="505" alt="image" src="https://github.com/user-attachments/assets/49acd298-7872-43c7-b5f8-d80afad6bc9d" />
+<img width="640" height="509" alt="image" src="https://github.com/user-attachments/assets/ecc174e1-bc10-46b4-81f7-7993610a3428" />
+
+---
+
 ## 📊 Dataset
 O conjunto de dados é fictício e foi criado exclusivamente para fins educacionais, simulando informações de profissionais:
 
@@ -61,9 +68,9 @@ python main.py
 
 📈 Próximos passos
 
--> Aplicar a análise em datasets reais
--> Explorar correlação estatística
--> Automatizar geração de relatórios
--> Evoluir para análises orientadas a negócio
+- Aplicar a análise em datasets reais
+- Explorar correlação estatística
+- Automatizar geração de relatórios
+- Evoluir para análises orientadas a negócio
 
 
