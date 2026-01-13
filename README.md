@@ -5,6 +5,16 @@ Este projeto tem como objetivo realizar uma análise exploratória de dados (EDA
 
 O foco do projeto é transformar dados brutos em insights claros e compreensíveis, utilizando Python e bibliotecas amplamente usadas em ciência de dados.
 
+## É Incluso:
+
+- Estatísticas descritivas automáticas
+- Verificação de valores ausentes
+- Detecção de outliers (IQR)
+- Análise de colunas numéricas e categóricas
+- Visualização gráfica (boxplot)
+- Exportação de relatórios em JSON
+- Interface Web com Streamlit
+
 ---
 
 ## Imagens
@@ -46,7 +56,7 @@ O conjunto de dados é fictício e foi criado exclusivamente para fins educacion
 - Python 3
 - Pandas
 - Matplotlib
-
+- Streamlit
 ---
 
 ## ▶️ Como executar o projeto
@@ -62,9 +72,35 @@ python -m venv .venv
 source venv/bin/activate  # Linux/macOS
 venv\Scripts\Activate.ps1   # Windows
 ---
-pip install pandas matplotlib
-python main.py
+pip install -r requirements.txt
 ```
+
+### 2️⃣ Comandos principais para execução
+--file           Caminho do arquivo CSV
+--column         Nome da coluna a ser analisada
+--save           Executa análise estatística descritiva salvando-a individualmente
+--verify         Executa verificação de qualidade dos dados
+--save-quality   Salva relatório de qualidade em arquivo .txt
+--plot           Gera histograma da coluna selecionada
+
+### Interface Web - Execução:
+Comando dentro da pasta src/
+```streamlit run app.py```
+
+## Execução Básica
+```python main.py --file caminho/do/arquivo.csv --column nome_da_coluna```
+## Análise Estatística da Coluna
+```python main.py --file dados.csv --column salario --stats```
+## Verificação de Qualidade dos Dados
+```python main.py --file dados.csv --column idade --verify```
+## Salvar Relatório de Qualidade
+```python main.py --file dados.csv --column idade --verify --save-quality```
+## Gerar Histograma
+```python main.py --file dados.csv --column salario --plot```
+
+LEMBRANDO QUE O --FILE SÓ É OBRIGATÓRIO SE FOR UM ARQUIVO ÚNICO DE DADOS SEPARADO DO PADRÃO EM data/data.csv. CASO CONTRÁRIO:
+```python main.py --column nome_da_coluna```
+
 
 📈 Próximos passos
 
