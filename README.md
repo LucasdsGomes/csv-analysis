@@ -5,6 +5,16 @@ Este projeto tem como objetivo realizar uma análise exploratória de dados (EDA
 
 O foco do projeto é transformar dados brutos em insights claros e compreensíveis, utilizando Python e bibliotecas amplamente usadas em ciência de dados.
 
+## É Incluso:
+
+- Estatísticas descritivas automáticas
+- Verificação de valores ausentes
+- Detecção de outliers (IQR)
+- Análise de colunas numéricas e categóricas
+- Visualização gráfica (boxplot)
+- Exportação de relatórios em JSON
+- Interface Web com Streamlit
+
 ---
 
 ## Imagens
@@ -72,6 +82,10 @@ pip install -r requirements.txt
 --verify         Executa verificação de qualidade dos dados
 --save-quality   Salva relatório de qualidade em arquivo .txt
 --plot           Gera histograma da coluna selecionada
+
+### Interface Web - Execução:
+Comando dentro da pasta src/
+```streamlit run app.py```
 
 ## Execução Básica
 ```python main.py --file caminho/do/arquivo.csv --column nome_da_coluna```
